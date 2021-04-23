@@ -1,0 +1,8 @@
+browser->server: HTTPS POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+
+note over browser:
+browser executes the event handler
+that renders notes with new note to display
+end note
+
+server-->browser: {message: "note created"}
