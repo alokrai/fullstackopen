@@ -99,7 +99,7 @@ const App = () => {
           `${newName} already exists in phonebook. Do you want to replace existing number with a new one?`
         )
       ) {
-        update(found.id, newPerson).then(() => fetchPersons());
+        update(found.id, newPerson).then(() => fetchPersons()).catch(err => alert('could not update'));
       }
       setNewNumber("");
       setNewName("");
